@@ -1,8 +1,12 @@
-#include <QString>
-#include "filemover.h"
 #include <process.h>
 
-int main(int argc, char *argv[])
+#include <QFileInfo>
+#include <QProcess>
+#include <QString>
+
+#include "filemover.h"
+
+int main(int argc, char* argv[])
 {
     /*QString info_file = argv[0];
     QString path_from = argv[1];
@@ -15,5 +19,11 @@ int main(int argc, char *argv[])
     QString app = argv[3];*/
 
     // Приложение не завершается после спавна
-    spawnl(P_NOWAITO, "D:/Project/qt/test_client/build/debug/client_test.exe", NULL);
+    //QProcess* process = new QProcess();
+    //QString   prog    = "D:/EvstigneevD/qt_Prj/test_client/build/debug/client_test.exe";
+    //process->start(prog);
+    //process->setProgram(prog);
+    //process->startDetached();
+
+    //spawnl(P_NOWAITO, "D:/EvstigneevD/qt_Prj/test_client/build/debug/client_test.exe", NULL);
 }
